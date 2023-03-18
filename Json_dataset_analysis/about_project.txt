@@ -1,0 +1,3 @@
+The project is still on going...
+The json data was gathered from:-
+https://www.uniprot.org/uniprotkb?query=RNA%20binding
