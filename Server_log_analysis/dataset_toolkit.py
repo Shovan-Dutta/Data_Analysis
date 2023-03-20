@@ -279,7 +279,7 @@ def main_caller(path,log_type):
 
 
 # settingup the parser
-parser = argparse.ArgumentParser(description="getting used to argparse")
+parser = argparse.ArgumentParser(description="Toolkit for the Server log dataset")
 parser.add_argument("--t", type=str,default="both",choices=['log','tomcat','both'],help="Get report for either log or tomcat or both log files types")
 parser.add_argument("--p", type=str,default = "D:/Sajib da/Server_data_work/logs",help="Get input path of log files")
 args = parser.parse_args()
