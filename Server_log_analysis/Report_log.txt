@@ -1,0 +1,1017 @@
+---------------------------------------------------------------------------------- Report / Summery ----------------------------------------------------------------------------------
+
+Total number of log file/s in the log folders of the data set 260
+Total number of logs in the log folders of the dataset 4722490
+The unique log types and their total count in the log folders of the datasets are :-  INFO : 9106,  WARN : 20174, ERROR : 15687, DEBUG : 4677523,
+A summary of max, min, avg, std values of the count of each type of log:-
+The highest number of  INFO logs in the time period was 632.0 record on2022-03-08. It has an average count of 14 and a standard deviation of 41.
+The lowest number of  INFO logs in the time period was 0.0 record_moded on2022-04-09
+The highest number of  WARN logs in the time period was 876.0 record on2021-11-01. It has an average count of 32 and a standard deviation of 60.
+The lowest number of  WARN logs in the time period was 1.0 record_moded on2022-09-24
+The highest number of ERROR logs in the time period was 300.0 record on2021-02-23. It has an average count of 25 and a standard deviation of 37.
+The lowest number of ERROR logs in the time period was 0.0 record_moded on2022-02-25
+The highest number of DEBUG logs in the time period was 51834.0 record on2022-05-13. It has an average count of 7320 and a standard deviation of 14525.
+The lowest number of DEBUG logs in the time period was 0.0 record_moded on2021-04-21
+D:/Sajib da/Server_data_work/logs/capitano/02-05-2021/log/capitano18.log :- 
+ INFO : 25
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/capitano/02-05-2021/log/capitano19.log :- 
+ INFO : 31
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/02-05-2021/log/capitano20.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/05-07-2021/log/capitano27-1.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano1.log :- 
+ INFO : 26
+ERROR : 240
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano2.log :- 
+ INFO : 26
+ERROR : 26
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano3.log :- 
+ INFO : 9
+ERROR : 1
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano4.log :- 
+ INFO : 26
+ERROR : 61
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano5-1.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/06-03-2021/log/capitano5.log :- 
+ INFO : 31
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano10.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano11.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano12.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano6.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano7.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano8.log :- 
+ INFO : 26
+ERROR : 1
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/07-04-2021/log/capitano9.log :- 
+ INFO : 31
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/11-04-2022/log/capitano29.log :- 
+ INFO : 25
+ WARN : 15
+D:/Sajib da/Server_data_work/logs/capitano/13-04-2021/log/capitano13.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/15-08-2021/log/capitano27-2.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-04-2021/log/capitano14.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-04-2021/log/capitano15.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-04-2021/log/capitano16.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano21.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano22-1.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano22.log :- 
+ INFO : 31
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano23.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano24.log :- 
+ INFO : 25
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano25.log :- 
+ INFO : 26
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano26.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/capitano27.log :- 
+ INFO : 31
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/capitano/16-06-2021/log/geld26-1.log :- 
+D:/Sajib da/Server_data_work/logs/capitano/19-12-2021/log/capitano27-3.log :- 
+ INFO : 31
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/capitano/21-04-2021/log/capitano17-1.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/21-04-2021/log/capitano17.log :- 
+ INFO : 31
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/23-02-2022/log/capitano28.log :- 
+ INFO : 25
+ WARN : 22
+D:/Sajib da/Server_data_work/logs/capitano/26-07-2022/log/capitano34.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/26-07-2022/log/capitano35.log :- 
+D:/Sajib da/Server_data_work/logs/capitano/26-07-2022/log/capitano36.log :- 
+ INFO : 25
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/capitano/26-07-2022/log/capitano37.log :- 
+ INFO : 31
+ WARN : 24
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld46-1.log :- 
+ INFO : 32
+ERROR : 125
+ WARN : 275
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld46-2.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld46.log :- 
+ INFO : 63
+ERROR : 494
+ WARN : 707
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld47.log :- 
+ INFO : 16
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld48.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld49.log :- 
+ INFO : 16
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/geld/01-06-2021/log/geld50.log :- 
+ INFO : 16
+ WARN : 42
+D:/Sajib da/Server_data_work/logs/geld/02-05-2021/log/geld45.log :- 
+ INFO : 17
+ WARN : 169
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld23.log :- 
+ INFO : 19
+ERROR : 17
+ WARN : 492
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld24.log :- 
+ INFO : 16
+ERROR : 3
+ WARN : 5
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld25.log :- 
+ INFO : 17
+ERROR : 3
+ WARN : 42
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld26.log :- 
+ INFO : 16
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld27.log :- 
+ INFO : 24
+ERROR : 96
+ WARN : 1751
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld28.log :- 
+ INFO : 21
+ERROR : 194
+ WARN : 613
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld29.log :- 
+ INFO : 21
+ERROR : 95
+ WARN : 275
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld30-1.log :- 
+ INFO : 17
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld30-2.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld30.log :- 
+ INFO : 21
+ERROR : 32
+ WARN : 26
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld31.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld32.log :- 
+ INFO : 16
+ERROR : 1
+ WARN : 250
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld33.log :- 
+ INFO : 33
+ERROR : 232
+ WARN : 362
+D:/Sajib da/Server_data_work/logs/geld/03-03-2021/log/geld34.log :- 
+ INFO : 17
+D:/Sajib da/Server_data_work/logs/geld/03-10-2021/log/geld67.log :- 
+ INFO : 30
+ERROR : 201
+ WARN : 837
+D:/Sajib da/Server_data_work/logs/geld/06-03-2021/log/geld33-1.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/06-03-2021/log/geld35.log :- 
+ INFO : 23
+ERROR : 61
+ WARN : 76
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld36.log :- 
+ INFO : 68
+ERROR : 517
+ WARN : 448
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld37.log :- 
+ INFO : 18
+ERROR : 11
+ WARN : 12
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld38.log :- 
+ INFO : 19
+ERROR : 4
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld39.log :- 
+ INFO : 21
+ERROR : 60
+ WARN : 43
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld40.log :- 
+ INFO : 25
+ERROR : 125
+ WARN : 53
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld41.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/07-04-2021/log/geld42.log :- 
+ INFO : 16
+ERROR : 3
+ WARN : 33
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld82.log :- 
+ INFO : 18
+ERROR : 2
+ WARN : 1058
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld83.log :- 
+ INFO : 29
+ERROR : 127
+ WARN : 167
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld85.log :- 
+ INFO : 16
+ERROR : 4
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld86.log :- 
+ INFO : 21
+ERROR : 49
+ WARN : 45
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld87.log :- 
+ INFO : 41
+ERROR : 310
+ WARN : 227
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld88.1.log :- 
+ INFO : 18
+ERROR : 47
+ WARN : 579
+D:/Sajib da/Server_data_work/logs/geld/09-05-2022/log/geld88.log :- 
+ INFO : 22
+ERROR : 84
+ WARN : 1183
+D:/Sajib da/Server_data_work/logs/geld/11-10-2021/log/geld68.log :- 
+ INFO : 22
+ERROR : 126
+ WARN : 160
+D:/Sajib da/Server_data_work/logs/geld/11-10-2021/log/geld69.log :- 
+ INFO : 18
+ERROR : 11
+ WARN : 22
+D:/Sajib da/Server_data_work/logs/geld/13-04-2021/log/geld43.log :- 
+ INFO : 16
+ WARN : 72
+D:/Sajib da/Server_data_work/logs/geld/13-04-2021/log/geld44.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/13-06-2022/log/geld89.log :- 
+ INFO : 17
+ERROR : 7
+ WARN : 11
+D:/Sajib da/Server_data_work/logs/geld/13-06-2022/log/geld90.log :- 
+ INFO : 17
+ERROR : 73
+ WARN : 116
+D:/Sajib da/Server_data_work/logs/geld/13-06-2022/log/geld91.log :- 
+ INFO : 42
+ERROR : 303
+ WARN : 135
+D:/Sajib da/Server_data_work/logs/geld/13-06-2022/log/geld92.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/13-06-2022/log/geld93.log :- 
+ INFO : 40
+ERROR : 584
+ WARN : 360
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld100.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld101.log :- 
+ INFO : 28
+ERROR : 362
+ WARN : 115
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld102.log :- 
+ INFO : 36
+ERROR : 659
+ WARN : 193
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld104.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld105.log :- 
+ INFO : 49
+ERROR : 829
+ WARN : 387
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld106.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld107.log :- 
+ INFO : 48
+ERROR : 798
+ WARN : 252
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld108.log :- 
+ INFO : 20
+ERROR : 91
+ WARN : 28
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld109.log :- 
+ INFO : 49
+ERROR : 749
+ WARN : 169
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld110.log :- 
+ INFO : 21
+ERROR : 167
+ WARN : 29
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld111.log :- 
+ INFO : 35
+ERROR : 487
+ WARN : 552
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld112.log :- 
+ INFO : 21
+ERROR : 102
+ WARN : 71
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld113.log :- 
+ INFO : 28
+ERROR : 261
+ WARN : 85
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld93-1.log :- 
+ INFO : 27
+ERROR : 143
+ WARN : 58
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld94.log :- 
+ INFO : 21
+ERROR : 46
+ WARN : 73
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld95.log :- 
+ INFO : 20
+ERROR : 49
+ WARN : 88
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld96.log :- 
+ INFO : 23
+ERROR : 407
+ WARN : 35
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld97.log :- 
+ INFO : 35
+ERROR : 379
+ WARN : 337
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld98.log :- 
+ INFO : 21
+ERROR : 271
+ WARN : 43
+D:/Sajib da/Server_data_work/logs/geld/14-11-2022/log/geld99.log :- 
+ INFO : 31
+ERROR : 706
+ WARN : 225
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld55-1.log :- 
+ INFO : 17
+ERROR : 23
+ WARN : 6
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld56.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld57.log :- 
+ INFO : 16
+ERROR : 201
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld58.log :- 
+ INFO : 17
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld59.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld60.log :- 
+ INFO : 20
+ERROR : 57
+ WARN : 45
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld61.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld62.log :- 
+ INFO : 17
+ERROR : 101
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld63.log :- 
+ INFO : 17
+ERROR : 11
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld64.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld65.log :- 
+ INFO : 27
+ERROR : 151
+ WARN : 180
+D:/Sajib da/Server_data_work/logs/geld/15-08-2021/log/geld66.log :- 
+ INFO : 16
+ WARN : 1081
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld70.log :- 
+ INFO : 16
+DEBUG : 255
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld71.log :- 
+ INFO : 16
+ WARN : 215
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld72.log :- 
+ INFO : 19
+ERROR : 37
+ WARN : 1394
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld73.log :- 
+ INFO : 16
+ WARN : 390
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld74.log :- 
+ INFO : 17
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld75.log :- 
+ INFO : 27
+ERROR : 151
+ WARN : 224
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld76.log :- 
+ INFO : 17
+ERROR : 5
+ WARN : 187
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld77.log :- 
+ INFO : 16
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld78.log :- 
+ INFO : 16
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld80.log :- 
+ INFO : 16
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/geld/19-12-2021/log/geld81.log :- 
+ INFO : 17
+ WARN : 60
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld51-1.log :- 
+ INFO : 18
+ERROR : 2
+ WARN : 7
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld51-2.log :- 
+ INFO : 20
+ERROR : 37
+ WARN : 13
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld52.log :- 
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld53.log :- 
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld54.log :- 
+D:/Sajib da/Server_data_work/logs/geld/21-07-2021/log/geld55.log :- 
+ INFO : 36
+ERROR : 155
+ WARN : 456
+D:/Sajib da/Server_data_work/logs/geld/30-06-2021/log/geld51.log :- 
+ INFO : 29
+ERROR : 103
+ WARN : 406
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-21.log :- 
+ INFO : 27
+DEBUG : 42
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-22.log :- 
+ INFO : 27
+DEBUG : 57
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-23.log :- 
+ INFO : 27
+DEBUG : 66
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-24.log :- 
+ INFO : 27
+DEBUG : 27
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-25.log :- 
+ INFO : 27
+DEBUG : 32
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-26.log :- 
+ INFO : 36
+DEBUG : 5183
+ERROR : 5
+ WARN : 56
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-28.log :- 
+ INFO : 28
+DEBUG : 1133
+ERROR : 9
+ WARN : 7
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-29.log :- 
+ INFO : 27
+DEBUG : 25
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-30.log :- 
+ INFO : 27
+DEBUG : 18
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-31.log :- 
+ INFO : 28
+DEBUG : 685
+ERROR : 18
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-32.log :- 
+ INFO : 27
+DEBUG : 147
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-33.log :- 
+ INFO : 27
+DEBUG : 289
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-34.log :- 
+ INFO : 27
+DEBUG : 162
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v1.log :- 
+ INFO : 26
+DEBUG : 58
+ERROR : 2
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v10.log :- 
+ INFO : 27
+DEBUG : 562
+ERROR : 18
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v11.log :- 
+ INFO : 28
+DEBUG : 104
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v12.log :- 
+ INFO : 27
+DEBUG : 78
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v13.log :- 
+ INFO : 28
+DEBUG : 2464
+ERROR : 45
+ WARN : 8
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v14.log :- 
+ INFO : 18
+ERROR : 6
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v15.log :- 
+ INFO : 43
+DEBUG : 11086
+ERROR : 111
+ WARN : 109
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v16.log :- 
+ INFO : 28
+DEBUG : 1626
+ERROR : 34
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v17.log :- 
+ INFO : 18
+ERROR : 6
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v18.log :- 
+ INFO : 30
+DEBUG : 2087
+ERROR : 15
+ WARN : 20
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v19.log :- 
+ INFO : 38
+DEBUG : 7351
+ERROR : 26
+ WARN : 70
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v2.log :- 
+ INFO : 26
+DEBUG : 151
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v20.log :- 
+ INFO : 32
+DEBUG : 3205
+ERROR : 23
+ WARN : 39
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v3.log :- 
+ INFO : 28
+DEBUG : 666
+ERROR : 19
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v4.log :- 
+ INFO : 27
+DEBUG : 52
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v5.log :- 
+ INFO : 27
+DEBUG : 432
+ERROR : 14
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v6.log :- 
+ INFO : 31
+DEBUG : 1030
+ERROR : 51
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v7.log :- 
+ INFO : 27
+DEBUG : 6
+ERROR : 1
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v8.log :- 
+ INFO : 27
+DEBUG : 772
+ERROR : 29
+ WARN : 1
+D:/Sajib da/Server_data_work/logs/valve/01-11-2021/log/valve-v9.log :- 
+ INFO : 29
+DEBUG : 3524
+ERROR : 23
+ WARN : 8
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-77.log :- 
+ INFO : 32
+ERROR : 1
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-78.log :- 
+ INFO : 33
+ERROR : 48
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-79.log :- 
+ INFO : 79
+ERROR : 151
+ WARN : 20
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-80.log :- 
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-81.log :- 
+ INFO : 71
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-82.log :- 
+ INFO : 62
+DEBUG : 173
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-83.log :- 
+ INFO : 62
+DEBUG : 279
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-84.log :- 
+ INFO : 70
+DEBUG : 50
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-85.log :- 
+ INFO : 72
+DEBUG : 24891
+ERROR : 14
+ WARN : 5
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-86.log :- 
+ INFO : 73
+DEBUG : 50
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-87.log :- 
+ INFO : 32
+DEBUG : 239
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-88.log :- 
+ INFO : 32
+DEBUG : 202
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-89.1.log :- 
+ INFO : 32
+DEBUG : 29
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-89.2.log :- 
+ INFO : 30
+DEBUG : 41
+ERROR : 11
+ WARN : 7
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-89.3.log :- 
+ INFO : 32
+DEBUG : 146
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-89.log :- 
+ INFO : 32
+DEBUG : 71
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-90.1.log :- 
+ INFO : 72
+DEBUG : 53019
+ERROR : 34
+ WARN : 11
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-90.log :- 
+ INFO : 38
+DEBUG : 52261
+ERROR : 67
+ WARN : 14
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-91.log :- 
+ INFO : 84
+DEBUG : 238497
+ERROR : 212
+ WARN : 36
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-92.1.log :- 
+ INFO : 78
+DEBUG : 132567
+ERROR : 88
+ WARN : 13
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-92.2.log :- 
+ INFO : 74
+DEBUG : 34859
+ERROR : 13
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/11-04-2022/log/valve-92.log :- 
+ INFO : 88
+DEBUG : 302220
+ERROR : 275
+ WARN : 39
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-100.log :- 
+ INFO : 70
+DEBUG : 6377
+ERROR : 2
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-101.log :- 
+ INFO : 73
+DEBUG : 33510
+ERROR : 16
+ WARN : 21
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-102.log :- 
+ INFO : 70
+DEBUG : 465
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-103.log :- 
+ INFO : 70
+DEBUG : 4398
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-104.log :- 
+ INFO : 70
+DEBUG : 1602
+ERROR : 2
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-105.1.log :- 
+ INFO : 71
+DEBUG : 11669
+ WARN : 5
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-105.log :- 
+ INFO : 70
+DEBUG : 89982
+ERROR : 8
+ WARN : 22
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-106.log :- 
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-107.log :- 
+ INFO : 72
+DEBUG : 1992
+ERROR : 2
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-108.log :- 
+ INFO : 73
+DEBUG : 13752
+ERROR : 9
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-110.log :- 
+ INFO : 71
+DEBUG : 11555
+ WARN : 4
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-111.log :- 
+ INFO : 72
+DEBUG : 494265
+ERROR : 9
+ WARN : 58
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-112.log :- 
+ INFO : 34
+DEBUG : 90281
+ERROR : 38
+ WARN : 27
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-113.log :- 
+ INFO : 70
+DEBUG : 129
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-114.log :- 
+ INFO : 71
+DEBUG : 19701
+ERROR : 66
+ WARN : 6
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-115.log :- 
+ INFO : 71
+DEBUG : 156795
+ERROR : 7
+ WARN : 26
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-116.log :- 
+ INFO : 71
+DEBUG : 111547
+ERROR : 1
+ WARN : 14
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-117.log :- 
+ INFO : 71
+DEBUG : 208895
+ERROR : 10
+ WARN : 39
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-118.log :- 
+ INFO : 71
+DEBUG : 6556
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-119.log :- 
+ INFO : 71
+DEBUG : 2743
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-120.log :- 
+ INFO : 71
+DEBUG : 64169
+ERROR : 16
+ WARN : 13
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-121.log :- 
+ INFO : 88
+DEBUG : 293203
+ERROR : 195
+ WARN : 37
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-122.log :- 
+ INFO : 73
+DEBUG : 833813
+ERROR : 14
+ WARN : 80
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-93.1.log :- 
+ INFO : 70
+DEBUG : 856
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-93.log :- 
+ INFO : 35
+DEBUG : 309
+ERROR : 14
+ WARN : 10
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-94.log :- 
+ INFO : 82
+DEBUG : 163257
+ERROR : 122
+ WARN : 36
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-95.log :- 
+ INFO : 84
+DEBUG : 115529
+ERROR : 94
+ WARN : 19
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-96.log :- 
+ INFO : 90
+DEBUG : 317885
+ERROR : 280
+ WARN : 47
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-97.log :- 
+ INFO : 108
+DEBUG : 499979
+ERROR : 445
+ WARN : 103
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-98.log :- 
+ INFO : 70
+DEBUG : 17110
+ERROR : 1
+ WARN : 7
+D:/Sajib da/Server_data_work/logs/valve/16-07-2022/log/valve-99.log :- 
+ INFO : 70
+DEBUG : 537
+ERROR : 1
+ WARN : 8
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-35.log :- 
+ INFO : 41
+DEBUG : 8764
+ERROR : 29
+ WARN : 83
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-36.log :- 
+ INFO : 30
+DEBUG : 3160
+ERROR : 2
+ WARN : 30
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-37.log :- 
+ INFO : 30
+DEBUG : 1143
+ERROR : 21
+ WARN : 15
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-38.log :- 
+ INFO : 29
+DEBUG : 1753
+ERROR : 29
+ WARN : 17
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-39.log :- 
+ INFO : 33
+DEBUG : 4501
+ERROR : 6
+ WARN : 26
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-40.log :- 
+ INFO : 29
+DEBUG : 2305
+ERROR : 50
+ WARN : 12
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-41.log :- 
+ INFO : 38
+DEBUG : 11547
+ERROR : 74
+ WARN : 110
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-42.log :- 
+ INFO : 30
+DEBUG : 2502
+ERROR : 20
+ WARN : 28
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-43.log :- 
+ INFO : 29
+DEBUG : 682
+ERROR : 1
+ WARN : 10
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-44.log :- 
+ INFO : 35
+DEBUG : 8323
+ERROR : 7
+ WARN : 64
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-45.log :- 
+ INFO : 39
+DEBUG : 8785
+ERROR : 91
+ WARN : 125
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-46.log :- 
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-47.log :- 
+ INFO : 33
+DEBUG : 4749
+ERROR : 24
+ WARN : 52
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-48.log :- 
+ INFO : 34
+DEBUG : 11906
+ERROR : 53
+ WARN : 88
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-49.log :- 
+ INFO : 29
+DEBUG : 2341
+ERROR : 5
+ WARN : 16
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-50.log :- 
+ INFO : 30
+DEBUG : 701
+ WARN : 5
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-51.log :- 
+ INFO : 28
+DEBUG : 1194
+ERROR : 1
+ WARN : 6
+D:/Sajib da/Server_data_work/logs/valve/19-12-2021/log/valve-52.log :- 
+ INFO : 46
+DEBUG : 9269
+ERROR : 48
+ WARN : 78
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-53.log :- 
+ INFO : 78
+DEBUG : 16916
+ERROR : 42
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-54.log :- 
+ INFO : 38
+DEBUG : 6184
+ERROR : 27
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-55.log :- 
+ INFO : 46
+DEBUG : 39
+ERROR : 36
+ WARN : 20
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-56.log :- 
+ INFO : 34
+DEBUG : 4349
+ERROR : 4
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-57.log :- 
+ INFO : 70
+DEBUG : 2649
+ERROR : 2
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-58.log :- 
+ INFO : 71
+DEBUG : 5462
+ERROR : 24
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-59.log :- 
+ INFO : 69
+DEBUG : 3790
+ERROR : 2
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-60.log :- 
+ INFO : 78
+DEBUG : 9528
+ERROR : 40
+ WARN : 3
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-61.log :- 
+ INFO : 71
+DEBUG : 326
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-62.log :- 
+ INFO : 92
+DEBUG : 34708
+ERROR : 310
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-63.log :- 
+ INFO : 83
+DEBUG : 14077
+ERROR : 48
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-64.log :- 
+ INFO : 83
+DEBUG : 14102
+ERROR : 39
+ WARN : 12
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-65.log :- 
+ INFO : 78
+DEBUG : 8766
+ERROR : 5
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-66.log :- 
+ INFO : 79
+DEBUG : 6264
+ERROR : 18
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-67.log :- 
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-68.log :- 
+ INFO : 40
+DEBUG : 10516
+ERROR : 38
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-70.log :- 
+ INFO : 71
+DEBUG : 351
+ WARN : 2
+D:/Sajib da/Server_data_work/logs/valve/23-02-2022/log/valve-71.log :- 
+ INFO : 66
+DEBUG : 41
+ WARN : 2
