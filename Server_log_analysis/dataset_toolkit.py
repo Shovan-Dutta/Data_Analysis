@@ -305,9 +305,9 @@ def main_caller(path,log_type,out_path,detail):
 # settingup the parser
 parser = argparse.ArgumentParser(description="Toolkit for the Server log dataset")
 parser.add_argument("--t", type=str,default="both",choices=['log','tomcat','both'],help="Get report for either log or tomcat or both log files types")
-parser.add_argument("--p", type=str,default = "D:/Sajib da/Server_data_work/logs",help="Get input path of log files")
-parser.add_argument("--out", type=str,default = "D:/Sajib da/Server_data_work/",help="Get output path of log files")
+parser.add_argument("--in_path", type=str,default = "D:/Sajib da/Server_data_work/logs",help="Get input path of log files")
+parser.add_argument("--out_path", type=str,default = "D:/Sajib da/Server_data_work/",help="Get output path of log files")
 parser.add_argument("--detail", type=int,default = 0,choices=[0,1],help="Use 1 for detailed report on a particular log type")
 args = parser.parse_args()
 
-main_caller(args.p,args.t,args.out,args.detail)
+main_caller(args.in_path,args.t,args.out_path,args.detail)
