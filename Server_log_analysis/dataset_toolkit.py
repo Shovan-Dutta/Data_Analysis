@@ -32,7 +32,7 @@ def detailed_report_writer(name,f_name,count_logs,unique_logs_types,unique_logs_
     f2.close()
 
 # For extracting data from each log file
-def log_read(f_name,out_path):
+def log_read(f_name,out_path,start,stop):
     file1 = open(f_name, 'r')
     Lines = file1.readlines()
     count_logs = 0 # to count the no. of log files
@@ -50,11 +50,30 @@ def log_read(f_name,out_path):
         except ValueError:
             pass
         else:
-            count_logs+=1
-            arr.append(line_no)
-            dates.append(line[0:10])
-            log.append(line[24:29])
-            unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
+            if start == "" and stop == "":
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[0:10])
+                log.append(line[24:29])
+                unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
+            elif pd.to_datetime(start) <= pd.to_datetime(line[:22]) and pd.to_datetime(start) <= pd.to_datetime(line[:22]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[0:10])
+                log.append(line[24:29])
+                unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
+            elif pd.to_datetime(start) <= pd.to_datetime(line[:22]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[0:10])
+                log.append(line[24:29])
+                unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
+            elif pd.to_datetime(stop) <= pd.to_datetime(line[:22]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[0:10])
+                log.append(line[24:29])
+                unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
         line_no+=1
 
     for t in unique_logs_types:
@@ -72,7 +91,7 @@ def log_read(f_name,out_path):
     return([count_logs,unique_log_type_counts,dates,log,unique_logs_type_messages])
 
 # For extracting data from each tomcat log file
-def tomcat_read(f_name,out_path):
+def tomcat_read(f_name,out_path,start,stop):
     file1 = open(f_name, 'r')
     Lines = file1.readlines()
     count_logs = 0 # to count the no. of log files
@@ -86,11 +105,30 @@ def tomcat_read(f_name,out_path):
     
     for line in Lines:        
         if is_ip(line[:15]): #to check for logs in the tomcat_log files
-            count_logs+=1
-            arr.append(line_no)
-            dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
-            log.append(line[line.find('00]')+5:].split(' ', 1)[0])
-            unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
+            if start == "" and stop == "":
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
+                log.append(line[line.find('00]')+5:].split(' ', 1)[0])
+                unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
+            elif pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]) and pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
+                log.append(line[line.find('00]')+5:].split(' ', 1)[0])
+                unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
+            elif pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
+                log.append(line[line.find('00]')+5:].split(' ', 1)[0])
+                unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
+            elif pd.to_datetime(stop) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
+                count_logs+=1
+                arr.append(line_no)
+                dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
+                log.append(line[line.find('00]')+5:].split(' ', 1)[0])
+                unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
         line_no+=1
     for t in unique_logs_types:
         c=0
@@ -114,12 +152,12 @@ def extracter(path,f_name,target):
         shutil.copy(path+'/'+f_name, target+f_name)
 
 #For traversing the complete file structure
-def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages):
+def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop):
   l_files = os.listdir(path) # getting all the contents of a particular folder
   
   for f_name in l_files:# Iterating over all the files
     if '.' not in f_name and f_name != "tomcat-logs": # only checking for log folders
-      temp = log_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages)
+      temp = log_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
       total_log_files=temp[0]
       total_logs=temp[1]
       file_log=temp[2]
@@ -130,7 +168,7 @@ def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,da
       unique_logs_type_messages = temp[7]
     elif '.log' in f_name and f_name not in visited : # only checking for unique log files
       visited.append(f_name)
-      info = log_read(path+'/'+f_name,out_path)
+      info = log_read(path+'/'+f_name,out_path,start,stop)
       extracter(path,f_name,out_path+'Uniquelog/')# this function copies unique files to a particular location
       count_logs=info[0]
       file_log[path+'/'+f_name]=info[1]
@@ -151,11 +189,11 @@ def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,da
   return([total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,unique_logs_type_messages])
 
 #For traversing the complete file structure
-def tomcat_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages):
+def tomcat_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop):
   l_files = os.listdir(path) # getting all the contents of a particular folder
   for f_name in l_files:# Iterating over all the files
     if '.' not in f_name and f_name != "log": # only checking for log folders
-      temp = tomcat_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages)
+      temp = tomcat_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
       total_log_files=temp[0]
       total_logs=temp[1]
       file_log=temp[2]
@@ -166,7 +204,7 @@ def tomcat_finder(path,total_log_files,total_logs,file_log,unique_log_type_count
       unique_logs_type_messages = temp[7]
     elif '.log' in f_name and f_name not in visited: # only checking for unique tomcat log files
       visited.append(f_name)
-      info = tomcat_read(path+'/'+f_name,out_path)
+      info = tomcat_read(path+'/'+f_name,out_path,start,stop)
       extracter(path,f_name,out_path+'Uniquetomcat/') # this function copies unique files to a particular location
       count_logs=info[0]
       file_log[path+'/'+f_name]=info[1]
@@ -192,14 +230,14 @@ def summary(record_mod):
     for i in record_mod.drop('Dates', axis=1).columns.values:
         b = record_mod[i].describe()
         information = b.to_dict()
-        s = "The highest number of "+str(i)+" logs in the time period was " + str(information['max'])+" record on" + str(record_mod["Dates"].loc[record_mod[i].idxmax()]) + ". It has an average count of "+str(round(information['mean']))+" and a standard deviation of "+str(round(information['std']))+".\nThe lowest number of "+ str(i)+" logs in the time period was "+str(information['min'])+" record_moded on"+str( record_mod["Dates"].loc[record_mod[i].idxmin()])
+        s = "The highest number of "+str(i)+" logs in the time period was " + str(information['max'])+" record on " + str(record_mod["Dates"].loc[record_mod[i].idxmax()])[:10] + ". It has an average count of "+str(round(information['mean']))+" and a standard deviation of "+str(round(information['std']))+".\nThe lowest number of "+ str(i)+" logs in the time period was "+str(information['min'])+" record_moded on "+str( record_mod["Dates"].loc[record_mod[i].idxmin()])[:10]
         summ.append(s)
     return(summ)
 
 # creates a csv file date wise count of each log type for further analysis
 def summarizer(Dates,Logs,name,out_path):
     record = pd.DataFrame({"Dates":[],"Log":[]}) #to keep track of datewise log
-    record['Dates'] = Dates
+    record['Dates'] = pd.to_datetime(Dates)
     record["Log"] = Logs
     a = record.groupby(['Dates', 'Log']).size() #To find count of each log type datewise 
     times = list(record['Dates'].unique())
@@ -241,14 +279,14 @@ def unique_data_accumulator(out_path,total,table):
     print("The log types whose detailed report can be seperately srecoe") 
     for u in total[3].keys():
         print(u," ")
-    log_type=input("Enter your choice and if not interested enter none")
+    log_type=input("Enter your choice and if not interested enter none :-")
     for u in total[3].keys():
-        if log_type in u:
+        if log_type.upper() in u:
             cs = pd.read_csv(out_path+table)
             f1 = open(out_path+"detailed_"+log_type+".txt", "a")
             f1.write("\nTotal number of "+u+" logs in the data set are:-"+str(cs[u].sum())+
                      "\nThe highest count of "+u+" logs in the time period was " + str(cs[u].max())+
-                     " record on" + str(cs["Dates"].loc[cs[u].max()]) + 
+                     " record on" + str(cs["Dates"].loc[cs[u] == cs[u].max()])[7:17] + 
                      ".\nIt has an average count of "+str(round(cs[u].mean()))+
                      " and a standard deviation of "+str(round(cs[u].std()))+
                      ".\nThe count number of "+ u+" logs in the time period was "+str(cs[u].min())+
@@ -260,11 +298,14 @@ def unique_data_accumulator(out_path,total,table):
             dict1 = total[2]
             for file in dict1.keys():
                 dict2 = dict1[file]
-                f1.write("\n"+file+" :- ")
-                f1.write("\n"+u+" : "+str(dict2[u]))
-        f1.close()
+                try:
+                    f1.write("\n"+file+" :- ")
+                    f1.write("\n"+u+" : "+str(dict2[u]))
+                except:
+                    pass
+            f1.close()
 
-def log_prog(path,out_path,detail):
+def log_prog(path,out_path,detail,start,stop):
     file_log = {} # to keep track of logs per file
     visited = [] # to keep track of the unique log files
     unique_log_type_count = {} #to keep count of all the unique log type counts
@@ -272,13 +313,13 @@ def log_prog(path,out_path,detail):
     log = [] #To get all the log
     unique_logs_type_messages={} # dictionary to keep track of unique log messages by type
     
-    total = log_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages)
+    total = log_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
     summ =summarizer(total[4],total[5],"log.csv",out_path)
     report_writer(total,"Report_log.txt",summ,out_path)
     if detail == 1:
         unique_data_accumulator(out_path,total,"log.csv")
 
-def tomcat_prog(path,out_path,detail):
+def tomcat_prog(path,out_path,detail,start,stop):
     file_log = {} # to keep track of logs per file
     visited = [] # to keep track of the unique log files
     unique_log_type_count = {} #to keep count of all the unique log type counts
@@ -286,20 +327,20 @@ def tomcat_prog(path,out_path,detail):
     log = [] #To get all the log
     unique_logs_type_messages={} # dictionary to keep track of unique log messages by type
     
-    total = tomcat_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages)
+    total = tomcat_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
     summ = summarizer(total[4],total[5],"tomcat.csv",out_path)
     report_writer(total,"Report_tomcat.txt",summ,out_path)
     if detail == 1:
         unique_data_accumulator(out_path,total,"tomcat.csv")
 
-def main_caller(path,log_type,out_path,detail):
+def main_caller(path,log_type,out_path,detail,start,stop):
     if log_type == 'log':
-        log_prog(path,out_path,detail)
+        log_prog(path,out_path,detail,start,stop)
     elif log_type == 'tomcat':
-        tomcat_prog(path, out_path,detail)
+        tomcat_prog(path, out_path,detail,start,stop)
     else:
-        log_prog(path,out_path,detail)
-        tomcat_prog(path,out_path,detail)
+        log_prog(path,out_path,detail,start,stop)
+        tomcat_prog(path,out_path,detail,start,stop)
 
 
 # settingup the parser
@@ -308,6 +349,8 @@ parser.add_argument("--t", type=str,default="both",choices=['log','tomcat','both
 parser.add_argument("--in_path", type=str,default = "D:/Sajib da/Server_data_work/logs",help="Get input path of log files")
 parser.add_argument("--out_path", type=str,default = "D:/Sajib da/Server_data_work/",help="Get output path of log files")
 parser.add_argument("--detail", type=int,default = 0,choices=[0,1],help="Use 1 for detailed report on a particular log type")
+parser.add_argument("--startdate", type=str,default ="",help="To get reports starting from a particular date")
+parser.add_argument("--stopdate", type=str,default ="",help="To get reports till a particular date")
 args = parser.parse_args()
 
-main_caller(args.in_path,args.t,args.out_path,args.detail)
+main_caller(args.in_path,args.t,args.out_path,args.detail,args.startdate,args.stopdate)
