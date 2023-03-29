@@ -56,7 +56,7 @@ def log_read(f_name,out_path,start,stop):
                 dates.append(line[0:10])
                 log.append(line[24:29])
                 unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
-            elif pd.to_datetime(start) <= pd.to_datetime(line[:22]) and pd.to_datetime(start) <= pd.to_datetime(line[:22]):
+            elif pd.to_datetime(start) <= pd.to_datetime(line[:22]) and pd.to_datetime(stop) >= pd.to_datetime(line[:22]):
                 count_logs+=1
                 arr.append(line_no)
                 dates.append(line[0:10])
@@ -68,7 +68,7 @@ def log_read(f_name,out_path,start,stop):
                 dates.append(line[0:10])
                 log.append(line[24:29])
                 unique_logs_types.add(line[24:29]) # finding the unique types of logs in the log file
-            elif pd.to_datetime(stop) <= pd.to_datetime(line[:22]):
+            elif pd.to_datetime(stop) >= pd.to_datetime(line[:22]):
                 count_logs+=1
                 arr.append(line_no)
                 dates.append(line[0:10])
@@ -86,7 +86,8 @@ def log_read(f_name,out_path,start,stop):
                 if t not in unique_logs_type_messages: # finding all the unique log messages in a log file by type
                     unique_logs_type_messages[t]=set()
                 unique_logs_type_messages[t].add(l[l.find(' :'):])
-    detailed_report_writer("Detailed_Report_log.txt",f_name,count_logs,unique_logs_types,unique_logs_type_messages,out_path) # to create the detatiles report
+    if len(unique_logs_types)!= 0:
+        detailed_report_writer("Detailed_Report_log.txt",f_name,count_logs,unique_logs_types,unique_logs_type_messages,out_path) # to create the detatiles report
     file1.close()
     return([count_logs,unique_log_type_counts,dates,log,unique_logs_type_messages])
 
@@ -111,7 +112,7 @@ def tomcat_read(f_name,out_path,start,stop):
                 dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
                 log.append(line[line.find('00]')+5:].split(' ', 1)[0])
                 unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
-            elif pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]) and pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
+            elif pd.to_datetime(start) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]) and pd.to_datetime(stop) >= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
                 count_logs+=1
                 arr.append(line_no)
                 dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
@@ -123,7 +124,7 @@ def tomcat_read(f_name,out_path,start,stop):
                 dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
                 log.append(line[line.find('00]')+5:].split(' ', 1)[0])
                 unique_logs_types.add(line[line.find('00]')+5:].split(' ', 1)[0])
-            elif pd.to_datetime(stop) <= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
+            elif pd.to_datetime(stop) >= pd.to_datetime(line[line.find(' - - [')+6:].split(':', 1)[0]):
                 count_logs+=1
                 arr.append(line_no)
                 dates.append(line[line.find(' - - [')+6:].split(':', 1)[0])
@@ -140,7 +141,8 @@ def tomcat_read(f_name,out_path,start,stop):
                 if t not in unique_logs_type_messages: # finding all the unique log messages in a log file by type
                     unique_logs_type_messages[t]=set()
                 unique_logs_type_messages[t].add(l[l.find('00]')+5:].split(' ', 1)[1])
-    detailed_report_writer("Detailed_Report_tomcat.txt",f_name,count_logs,unique_logs_types,unique_logs_type_messages,out_path) # to create the detatiles report
+    if len(unique_logs_types)!= 0:
+        detailed_report_writer("Detailed_Report_tomcat.txt",f_name,count_logs,unique_logs_types,unique_logs_type_messages,out_path) # to create the detatiles report
     file1.close()
     return([count_logs,unique_log_type_counts,dates,log,unique_logs_type_messages])
 
