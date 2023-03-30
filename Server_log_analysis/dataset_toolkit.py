@@ -14,6 +14,16 @@ def is_ip(s):
             return True
         else:
             return False
+
+#to find a path of a particular check point
+def checkp(path,checkpoint):
+    l_files = os.listdir(path) # getting all the contents of a particular folder
+    for f_name in l_files:# Iterating over all the files
+        if '.' not in f_name and checkpoint not in f_name:
+          l_files2 = os.listdir(path +'/'+f_name)
+          for f_name2 in l_files2:# Iterating over all the files
+            if '.' not in f_name2 and checkpoint in f_name2:
+              return(path +'/'+f_name+'/'+f_name2)
         
 # For getting detailed report on the entire dataset
 def detailed_report_writer(name,f_name,count_logs,unique_logs_types,unique_logs_type_messages,out_path):
@@ -159,15 +169,15 @@ def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,da
   
   for f_name in l_files:# Iterating over all the files
     if '.' not in f_name and f_name != "tomcat-logs": # only checking for log folders
-      temp = log_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
-      total_log_files=temp[0]
-      total_logs=temp[1]
-      file_log=temp[2]
-      unique_log_type_count = temp[3]
-      dates = temp[4]
-      log = temp[5]
-      visited = temp[6]
-      unique_logs_type_messages = temp[7]
+        temp = log_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
+        total_log_files=temp[0]
+        total_logs=temp[1]
+        file_log=temp[2]
+        unique_log_type_count = temp[3]
+        dates = temp[4]
+        log = temp[5]
+        visited = temp[6]
+        unique_logs_type_messages = temp[7]
     elif '.log' in f_name and f_name not in visited : # only checking for unique log files
       visited.append(f_name)
       info = log_read(path+'/'+f_name,out_path,start,stop)
@@ -194,16 +204,16 @@ def log_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,da
 def tomcat_finder(path,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop):
   l_files = os.listdir(path) # getting all the contents of a particular folder
   for f_name in l_files:# Iterating over all the files
-    if '.' not in f_name and f_name != "log": # only checking for log folders
-      temp = tomcat_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
-      total_log_files=temp[0]
-      total_logs=temp[1]
-      file_log=temp[2]
-      unique_log_type_count = temp[3]
-      dates = temp[4]
-      log = temp[5]
-      visited = temp[6]
-      unique_logs_type_messages = temp[7]
+    if '.' not in f_name and f_name != "log": # only checking for tomcat folders
+        temp = tomcat_finder(path +'/'+f_name,total_log_files,total_logs,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
+        total_log_files=temp[0]
+        total_logs=temp[1]
+        file_log=temp[2]
+        unique_log_type_count = temp[3]
+        dates = temp[4]
+        log = temp[5]
+        visited = temp[6]
+        unique_logs_type_messages = temp[7]
     elif '.log' in f_name and f_name not in visited: # only checking for unique tomcat log files
       visited.append(f_name)
       info = tomcat_read(path+'/'+f_name,out_path,start,stop)
@@ -232,7 +242,7 @@ def summary(record_mod):
     for i in record_mod.drop('Dates', axis=1).columns.values:
         b = record_mod[i].describe()
         information = b.to_dict()
-        s = "The highest number of "+str(i)+" logs in the time period was " + str(information['max'])+" record on " + str(record_mod["Dates"].loc[record_mod[i].idxmax()])[:10] + ". It has an average count of "+str(round(information['mean']))+" and a standard deviation of "+str(round(information['std']))+".\nThe lowest number of "+ str(i)+" logs in the time period was "+str(information['min'])+" record_moded on "+str( record_mod["Dates"].loc[record_mod[i].idxmin()])[:10]
+        s = "The highest number of "+str(i)+" logs in the time period was " + str(information['max'])+" record on " + str(record_mod["Dates"].loc[record_mod[i].idxmax()])[:10] + ". It has an average count of "+str(round(information['mean']))+".\nThe lowest number of "+ str(i)+" logs in the time period was "+str(information['min'])+" record_moded on "+str( record_mod["Dates"].loc[record_mod[i].idxmin()])[:10]
         summ.append(s)
     return(summ)
 
@@ -307,13 +317,16 @@ def unique_data_accumulator(out_path,total,table):
                     pass
             f1.close()
 
-def log_prog(path,out_path,detail,start,stop):
+def log_prog(path,out_path,detail,start,stop,checkpoint):
     file_log = {} # to keep track of logs per file
     visited = [] # to keep track of the unique log files
     unique_log_type_count = {} #to keep count of all the unique log type counts
     dates=[] #To get all the dates of the logs
     log = [] #To get all the log
     unique_logs_type_messages={} # dictionary to keep track of unique log messages by type
+
+    if checkpoint !="":
+        path = checkp(path,checkpoint)
     
     total = log_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
     summ =summarizer(total[4],total[5],"log.csv",out_path)
@@ -321,13 +334,16 @@ def log_prog(path,out_path,detail,start,stop):
     if detail == 1:
         unique_data_accumulator(out_path,total,"log.csv")
 
-def tomcat_prog(path,out_path,detail,start,stop):
+def tomcat_prog(path,out_path,detail,start,stop,checkpoint):
     file_log = {} # to keep track of logs per file
     visited = [] # to keep track of the unique log files
     unique_log_type_count = {} #to keep count of all the unique log type counts
     dates=[] #To get all the dates of the logs
     log = [] #To get all the log
     unique_logs_type_messages={} # dictionary to keep track of unique log messages by type
+
+    if checkpoint !="":
+        path = checkp(path,checkpoint)
     
     total = tomcat_finder(path,0,0,file_log,unique_log_type_count,dates,log,visited,out_path,unique_logs_type_messages,start,stop)
     summ = summarizer(total[4],total[5],"tomcat.csv",out_path)
@@ -335,14 +351,14 @@ def tomcat_prog(path,out_path,detail,start,stop):
     if detail == 1:
         unique_data_accumulator(out_path,total,"tomcat.csv")
 
-def main_caller(path,log_type,out_path,detail,start,stop):
+def main_caller(path,log_type,out_path,detail,start,stop,checkpoint):
     if log_type == 'log':
-        log_prog(path,out_path,detail,start,stop)
+        log_prog(path,out_path,detail,start,stop,checkpoint)
     elif log_type == 'tomcat':
-        tomcat_prog(path, out_path,detail,start,stop)
+        tomcat_prog(path, out_path,detail,start,stop,checkpoint)
     else:
-        log_prog(path,out_path,detail,start,stop)
-        tomcat_prog(path,out_path,detail,start,stop)
+        log_prog(path,out_path,detail,start,stop,checkpoint)
+        tomcat_prog(path,out_path,detail,start,stop,checkpoint)
 
 
 # settingup the parser
@@ -353,6 +369,7 @@ parser.add_argument("--out_path", type=str,default = "D:/Sajib da/Server_data_wo
 parser.add_argument("--detail", type=int,default = 0,choices=[0,1],help="Use 1 for detailed report on a particular log type")
 parser.add_argument("--startdate", type=str,default ="",help="To get reports starting from a particular date")
 parser.add_argument("--stopdate", type=str,default ="",help="To get reports till a particular date")
+parser.add_argument("--checkpoint", type=str,default ="",help="To get reports only from a check point")
 args = parser.parse_args()
 
-main_caller(args.in_path,args.t,args.out_path,args.detail,args.startdate,args.stopdate)
+main_caller(args.in_path,args.t,args.out_path,args.detail,args.startdate,args.stopdate,args.checkpoint)
